@@ -1,0 +1,9 @@
+<launch>
+	<!-- run the position_control.cpp -->
+
+	<node pkg="cotrack" type="target_detect" name="target_detect" output="screen">
+
+		<!-- load blacklist, config -->
+                <rosparam command="load" file="/home/jjq/cotrack_ws/config/drone1_param.yaml" />
+	</node>
+</launch>
